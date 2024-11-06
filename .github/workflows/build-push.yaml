@@ -12,12 +12,11 @@
 #  limitations under the License.
 
 name: Publish Docker image
-
+run-name: ${{ github.actor }} is testing out GitHub Actions Push
 on: [push]
-
 jobs:
-  environment: development
   push_to_registry:
+    environment: development
     name: Push Docker image to Docker Hub
     runs-on: ubuntu-latest
     permissions:
