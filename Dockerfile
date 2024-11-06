@@ -14,6 +14,9 @@
 FROM alpine:latest
 
 LABEL "maintainer"="fergal somers"
+LABEL "org.opencontainers.image.source"="https://github.com/fergalsomers/alpine-gettext"
+LABEL "org.opencontainers.image.description"="Alpine with gettext"
+LABEL "org.opencontainers.image.licenses"="Apache"
 
 ENV ISTIO_HTTP_NODE_PORT=31590
 ENV ISTIO_HTTPS_NODE_PORT=31591
